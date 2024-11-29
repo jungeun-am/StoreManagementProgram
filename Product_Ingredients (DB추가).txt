@@ -1,0 +1,354 @@
+2024/11/29
+
+>> 사이드 / 음료 추가!
+
+-- 2. 음료 (category_id = 2)
+-- 탄산 음료
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '사이다(제로)', 2000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '콜라(제로)', 2000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '환타', 2500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '마운틴듀', 2500);
+
+-- 주스
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '오렌지주스', 3000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '포도주스', 3000);
+
+-- 에이드
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '복숭아 에이드', 3500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '청포도 에이드', 3500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '레몬 에이드', 3500);
+
+-- 물
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '물', 1000);
+
+-- 커피
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '아이스 아메리카노', 2000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '핫 아메리카노', 2000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '아이스 라떼', 3000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 2, '라떼', 3000);
+
+-- 3. 사이드, 디저트 (category_id = 3)
+-- 감자튀김 (해쉬브라운, 기본, 치즈감튀, 어니언 감튀, 케이준)
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '해쉬브라운', 3000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '기본 감자튀김', 2500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '치즈감튀', 3000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '어니언 감튀', 3000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '케이준 감자튀김', 3500);
+
+-- 튀김류
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '어니언링', 3000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '치즈스틱', 2000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '치즈볼', 3500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '팝콘볼', 2900);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '할라피뇨 너겟', 3000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '치킨랩', 5000);
+
+-- 샐러드류
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '콘샐러드', 3000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '코오슬로', 3500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '리코타 샐러드', 4000);
+
+-- 아이스크림
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '플레인 아이스크림', 3000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '초코 아이스크림', 3500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '딸기 아이스크림', 3500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '아포가토 아이스크림', 4000);
+
+-- 쉐이크
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '밀크 쉐이크', 5000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '초코 쉐이크', 5500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '바닐라 쉐이크', 5500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '딸기 쉐이크', 5500);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '피스타치오 쉐이크', 6000);
+
+-- 빙수
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '옛날빙수', 4000);
+INSERT INTO Products (product_id, category_id, name, price)
+VALUES (product_seq.NEXTVAL, 3, '망고빙수', 6500);
+
+
+
+=========================================
+
+
+-- Ingredients  추가
+
+
+
+INSERT INTO Ingredients (ingredient_id, category_id, name, unit_price, unit)
+VALUES (ingredient_seq.NEXTVAL, 3, '체다치즈', 30, 'g');
+
+INSERT INTO Ingredients (ingredient_id, category_id, name, unit_price, unit)
+VALUES (ingredient_seq.NEXTVAL, 4, '슬라이스치즈', 200, '개');
+
+INSERT INTO Ingredients (ingredient_id, category_id, name, unit_price, unit)
+VALUES (ingredient_seq.NEXTVAL, 4, '모짜렐라치즈, 40, 'g');
+
+
+
+=========================================
+
+
+
+
+
+
+-- 치즈버거
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (1, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (1, 2, 30);  -- 토마토 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (1, 3, 1);   -- 소고기 패티 1개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (1, 4, 20);  -- 케첩 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (1, 5, 2);   -- 번 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (1, 17, 1);  -- 슬라이스치즈 1개
+
+
+-- 불고기 버거
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (2, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (2, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (2, 11, 20); -- 불고기 소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (2, 5, 2);   -- 번 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (2, 3, 1);   -- 소고기 패티 1개
+
+
+
+-- 디럭스불고기 버거
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (3, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (3, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (3, 3, 2);   -- 소고기 패티 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (3, 11, 40); -- 불고기 소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (3, 5, 2);   -- 번 2개
+
+-- 더블치즈버거
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (4, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (4, 6, 20);  -- 피클 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (4, 4, 20);  -- 케첩 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (4, 17, 2);  -- 슬라이스치즈 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (4, 5, 2);   -- 번 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (4, 3, 1);   -- 소고기 패티 1개
+
+
+
+-- 2024 버거
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (5, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (5, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (5, 11, 20); -- 불고기 소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (5, 16, 30); -- 체다 치즈 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (5, 5, 2);   -- 번 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (5, 12, 20); -- 랜치소스 20ml
+
+-- 모짜렐라 비프 버거
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (6, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (6, 6, 20);  -- 피클 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (6, 4, 20);  -- 케첩 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (6, 18, 40); -- 모짜렐라치즈 40g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (6, 5, 2);   -- 번 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (6, 3, 2);   -- 소고기 패티 2개
+
+
+-- 새우새우 버거
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (7, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (7, 6, 20);  -- 피클 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (7, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (7, 12, 20); -- 랜치소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (7, 5, 2);   -- 번 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (7, 8, 1);   -- 새우 패티 1개
+
+-- 새우불고기 버거
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (8, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (8, 6, 20);  -- 피클 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (8, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (8, 12, 20); -- 랜치소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (8, 11, 20); -- 불고기 소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (8, 3, 1);   -- 소고기 패티 1개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (8, 8, 1);   -- 새우 패티 1개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (8, 5, 2);   -- 번 2개
+
+-- 금구버거 (닭다리 살)
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (9, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (9, 6, 20);  -- 피클 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (9, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (9, 10, 20); -- 마요네즈 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (9, 9, 1);   -- 치킨 패티 1개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (9, 13, 20); -- 스위트 칠리 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (9, 16, 30); -- 체다 치즈 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (9, 5, 2);   -- 번 2개
+
+-- 2024버거 (닭다리 살)
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (10, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (10, 6, 20);  -- 피클 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (10, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (10, 10, 20); -- 마요네즈 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (10, 15, 20); -- 불닭소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (10, 19, 1);  -- 햄 1개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (10, 17, 1);  -- 슬라이스치즈 1개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (10, 5, 2);   -- 번 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (10, 9, 1);   -- 치킨 패티 1개
+
+
+-- 놀란버거 (닭다리 살)
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (11, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (11, 6, 20);  -- 피클 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (11, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (11, 10, 20); -- 마요네즈 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (11, 13, 20); -- 스위트 칠리 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (11, 19, 2);  -- 햄 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (11, 5, 2);   -- 번 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (11, 9, 1);   -- 치킨 패티 1개
+
+-- 갈릭버거 (닭 가슴살)
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (12, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (12, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (12, 14, 20); -- 갈릭소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (12, 19, 2);  -- 햄 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (12, 5, 2);   -- 번 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (12, 9, 1);   -- 치킨 패티 1개
+
+-- 치킨치즈버거 (닭 가슴살)
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (13, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (13, 6, 20);  -- 피클 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (13, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (13, 12, 20); -- 렌치소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (13, 16, 30); -- 체다 치즈 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (13, 19, 1);  -- 햄 1개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (13, 5, 2);   -- 번 2개
+
+-- 불불버거 (닭 가슴살)
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (14, 1, 50);  -- 양상추 50g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (14, 6, 20);  -- 피클 20g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (14, 7, 30);  -- 양파 30g
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (14, 15, 20); -- 불닭소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (14, 12, 20); -- 랜치소스 20ml
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (14, 5, 2);   -- 번 2개
+INSERT INTO Product_Ingredients (product_id, ingredient_id, required_amount)
+VALUES (14, 9, 1);   -- 치킨 패티 1개
+
